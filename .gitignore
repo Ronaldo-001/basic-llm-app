@@ -135,7 +135,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-llm-app-venv
+./llm-app-venv/
 .streamlit/
 
 # Spyder project settings
