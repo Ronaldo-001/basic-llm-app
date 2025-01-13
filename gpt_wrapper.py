@@ -16,7 +16,8 @@ def generate_content(prompt):
             {"role": "user", "content": prompt} # specify user and their prompt in content
         ]
     )
-    return completion.choices[0].message.content # here the respose from gpt is in json so we use . format to access the answer
+    # return completion.choices[0].message.content # here the respose from gpt is in json so we use . format to access the answer
+    st.write(completion.choices[0].message.content) # write output in streamlit page
 
 def generate_image(prompt):
     response = client.images.generate(  #calling image gen function with prompts
