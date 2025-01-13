@@ -21,7 +21,7 @@ def generate_content(prompt):
 def generate_image(prompt):
     response = client.images.generate(  #calling image gen function with prompts
         model="dall-e-3",               #parameters of the function
-        prompt="a boy facing his dreams",
+        prompt=prompt,
         size="1024x1024",
         quality="standard",
         n=1,  #quantity of images
